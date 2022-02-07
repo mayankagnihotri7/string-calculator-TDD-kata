@@ -62,4 +62,18 @@ RSpec.describe StringCalculator do
       expect(StringCalculator.add("78\n250, 25\n25, 50\n50")).to eq(478)
     end
   end
+
+  context 'delimiters' do
+    it "returns 3 for the string '//;\n1;2'" do
+      expect(StringCalculator.add("//;\n1;2")).to eq(3)
+    end
+
+    it "returns 6 for the string '//;\n1;2;3,'" do
+      expect(StringCalculator.add("//;\n1;2;3")).to eq(6)
+    end
+
+    it "returns 8 for the string '3\n2\n3, 0'" do
+      expect(StringCalculator.add("//;3\n2;\n3, 0")).to eq(8)
+    end
+  end
 end
