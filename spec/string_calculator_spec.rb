@@ -39,7 +39,7 @@ RSpec.describe StringCalculator do
 
   context 'flexible delimiters' do
     it "returns 3 for the string '1\n,2'" do
-      expect(StringCalculator.add('1,2')).to eq(3)
+      expect(StringCalculator.add("1\n,2")).to eq(3)
     end
 
     it "returns 6 for the string '1\n2, 3'" do
