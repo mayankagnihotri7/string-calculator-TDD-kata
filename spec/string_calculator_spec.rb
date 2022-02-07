@@ -37,7 +37,7 @@ RSpec.describe StringCalculator do
     end
   end
 
-  context 'flexible delimiters' do
+  context 'newline characters' do
     it "returns 3 for the string '1\n,2'" do
       expect(StringCalculator.add("1\n,2")).to eq(3)
     end
