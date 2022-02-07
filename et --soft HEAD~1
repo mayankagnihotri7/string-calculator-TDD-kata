@@ -1,0 +1,13 @@
+* [33mc41d626[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m Fix: Failing tests for newline characters in string
+* [33md645e9e[m Change single quote to double quotes for newline characters test
+* [33mda2b5ad[m Changed values in expect in failing tests
+* [33m8c5d185[m Add failing tests for newline characters in string with numbers
+* [33m6f0303f[m Fix: Failing tests for two numbers in string
+* [33me7fd5d3[m Add failing tests for two numbers in string
+* [33md5905a4[m Fix: Failing tests for single number in string
+* [33md70995a[m Add failing test for single number in string
+* [33m9519a05[m[33m ([m[1;31morigin/main[m[33m)[m Fix: Failing test for empty string
+* [33m0183ff5[m Add Failing test for empty string
+* [33m8570414[m Fix: Failing test for rspec
+* [33mde140df[m Add failing test for rspec
+* [33m779e871[m Setup files
