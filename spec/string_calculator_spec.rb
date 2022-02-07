@@ -76,4 +76,18 @@ RSpec.describe StringCalculator do
       expect(StringCalculator.add("//;3\n2;\n3, 0")).to eq(8)
     end
   end
+
+  context 'negative numbers' do
+    it 'raises exception when string contains a negative number' do
+      expect { StringCalculator.add('-1') }.to raise_error('negatives not allowed - (-1)')
+    end
+
+    it 'raises exception when string contains single negative number' do
+      expect { StringCalculator.add('2, -1') }.to raise_error('negatives not allowed - (-1)')
+    end
+
+    it 'raises exception when string contains multiple negative numbers' do
+      expect { StringCalculator.add('2, -1, -30') }.to raise_error('negatives not allowed - (-1, -30)')
+    end
+  end
 end
