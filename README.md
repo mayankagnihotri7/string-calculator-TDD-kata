@@ -22,9 +22,9 @@
     - The following input is NOT ok: `"1,\n"` (not need to prove it - just clarifying)
     - Support different delimiters
 
-To change a delimiter, the beginning of the string will contain a separate line that looks like this: `"//[delimiter]\n[numbers…]"` for example `"//;\n1;2"` should return 3 where the default delimiter is `";"`
-The first line is optional. all existing scenarios should still be supported
+    - To change a delimiter, the beginning of the string will contain a separate line that looks like this: `"//[delimiter]\n[numbers…]"` for example `"//;\n1;2"` should return 3 where the default delimiter is `";"`
+            The first line is optional. all existing scenarios should still be supported
 
 5. Calling Add with a negative number will throw an exception "negatives not allowed" - and the negative that was passed.
 
-If there are multiple negatives, show all of them in the exception message.
+      - If there are multiple negatives, show all of them in the exception message.
